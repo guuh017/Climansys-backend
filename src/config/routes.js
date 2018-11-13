@@ -9,7 +9,7 @@ module.exports = (server) => {
 
 	const AuthService = require('../api/templates/services/authService')
 	apiAberta.post('/login', AuthService.login)
-	apiAberta.post('/signup', AuthService.signup)
+	//apiAberta.post('/signup', AuthService.signup)
 	apiAberta.post('/validarToken', AuthService.validarToken)
 
 	//API PROTEGIDA
