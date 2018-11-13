@@ -2,7 +2,7 @@ const _ = require('lodash')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const usuario = require('../models/models').usuario
-const env = require('../../../../.env')
+const env = require('../../../.env')
 
 const emailRegex = /\S+@\S+\.\S+/
 const pwdRegex = /((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{8,20})/
