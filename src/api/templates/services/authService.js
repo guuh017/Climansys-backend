@@ -46,8 +46,8 @@ const signup = (req, res, next) => {
     const nome = req.body.nome || ''
     const email = req.body.email || ''
     const senha = req.body.senha || ''
-    const confirmacaoSenha = req.body.confimacao_senha || ''
-
+    const confirmacaoSenha = req.body.confirmacao_senha || ''
+    
     if(!email.match(emailRegex)) {
         return res.status(400).send({errors: ['O e-mail informado está inválido']})
     }
