@@ -4,6 +4,7 @@
   "description": "Api Rest Climansys",
   "main": "loader.js",
   "scripts": {
+    "start": "node loader.js",
     "dev": "nodemon",
     "production": "pm2 start loader.js --name backend"
   },
