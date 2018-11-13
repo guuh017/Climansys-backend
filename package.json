@@ -1,0 +1,33 @@
+{
+  "name": "climansys-api",
+  "version": "1.0.0",
+  "description": "Api Rest Climansys",
+  "main": "loader.js",
+  "scripts": {
+    "dev": "nodemon",
+    "production": "pm2 start loader.js --name backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guuh017/Climansys-backend.git"
+  },
+  "author": "Climansys Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guuh017/Climansys-backend/issues"
+  },
+  "homepage": "https://github.com/guuh017/Climansys-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-query-int": "^3.0.0",
+    "loadash": "^1.0.0",
+    "mongoose": "^5.3.11",
+    "mongoose-paginate": "^5.0.3",
+    "node-restful": "^0.2.6",
+    "pm2": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}
