@@ -58,7 +58,14 @@ const consultaSchema = new mongoose.Schema({
 	}
 })
 
+const userSchema = new mongoose.Schema({
+	nome: { type: String, required: true },
+	email: { type: String, required: true },
+	senha: { type: String, min: 8, max: 20, required: true }
+})
+
 module.exports = {
+	usuario: restful.model('users', userSchema),
 	paciente: restful.model('pacientes', pacienteSchema),
 	medico: restful.model('medicos', medicoSchema),
 	atendente: restful.model('atendentes', atendenteSchema),
