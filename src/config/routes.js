@@ -7,7 +7,7 @@ module.exports = (server) => {
 	const apiAberta = express.Router()
 	server.use('/oapi', apiAberta)
 
-	const AuthService = require('../api/templates/services/AuthService')
+	const AuthService = require('../api/templates/services/authService')
 	apiAberta.post('/login', AuthService.login)
 	apiAberta.post('/signup', AuthService.signup)
 	apiAberta.post('/validarToken', AuthService.validarToken)
