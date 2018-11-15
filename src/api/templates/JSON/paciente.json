@@ -1,0 +1,19 @@
+{
+	"nome": "",
+	"sobrenome": "",
+	"cpf":  "",
+	"rg":  "",
+	"telefone": [
+		{
+			"telefone": ""
+		}],
+	"endereco": {
+		"rua":  "",
+		"numero":  0,
+		"complemento":  "",
+		"cep":  "",
+		"cidade":  "",
+		"bairro":  "",
+		"uf":  ""
+	}
+}
